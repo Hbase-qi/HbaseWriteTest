@@ -6,11 +6,11 @@ import java.util.Iterator;
 import java.util.TreeSet;
 
 public class HashChoreWoker implements SplitKeysCalculator{
-    //随机取机数目
+    //随机取样总数目
     private int baseRecord;
     //rowkey生成器
     private RowKeyGenerator rkGen;
-    //取样时，由取样数目及region数相除所得的数量.
+    //每个分区样本数
     private int splitKeysBase;
     //splitkeys个数
     private int splitKeysNumber;
